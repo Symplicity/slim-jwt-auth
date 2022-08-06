@@ -517,6 +517,9 @@ final class JwtAuthentication implements MiddlewareInterface
         }
     }
 
+    /**
+     * @return array<int|string,Key>
+     */
     private function createKeysFromAlgorithms(): array
     {
         $keyObjects = [];
